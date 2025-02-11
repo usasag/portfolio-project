@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(255, 136, 6, 0.5),
+                0 0 30px rgba(255, 136, 6, 0.3);
+  }
+}
+
+@keyframes videoFade {
+  0%, 11% {
+    opacity: 1;
+  }
+  16%, 94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
