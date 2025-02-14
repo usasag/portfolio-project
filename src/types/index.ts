@@ -5,15 +5,24 @@ export interface Language {
 
 export interface Translation {
   nav: {
+    home: string;
     services: string;
     portfolio: string;
     about: string;
     contact: string;
+    blog: string;
   };
   hero: {
     title: string;
     subtitle: string;
     cta: string;
+  };
+  pagetitles: {
+    home: string;
+    services: string;
+    portfolio: string;
+    about: string;
+    contact: string;
   };
   services: {
     title: string;

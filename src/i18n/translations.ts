@@ -3,15 +3,24 @@ import { Translation } from '../types';
 export const translations: Record<string, Translation> = {
   en: {
     nav: {
+      home: "",
       services: 'Services',
       portfolio: 'Portfolio',
       about: 'About',
       contact: 'Contact',
+      blog: 'Blog',
     },
     hero: {
       title: 'Transforming Ideas into Digital Excellence',
-      subtitle: 'Innovative solutions in consulting, design, and technology',
+      subtitle: 'Innovative solutions in lead generation, design, and technology',
       cta: 'Get Started',
+    },
+    pagetitles: {
+      home: 'Home',
+      services: 'Services',
+      portfolio: 'Portfolio',
+      about: 'About Us',
+      contact: 'Contact Us',
     },
     services: {
       title: 'Services we offer',
@@ -53,18 +62,27 @@ export const translations: Record<string, Translation> = {
   },
   pt: {
     nav: {
+      home: '',
       services: 'Serviços',
       portfolio: 'Portfólio',
       about: 'Sobre',
       contact: 'Contato',
+      blog: 'Blog',
     },
     hero: {
       title: 'Transformando Ideias em Excelência Digital',
-      subtitle: 'Soluções inovadoras em consultoria, design e tecnologia',
+      subtitle: 'Soluções inovadoras em geração de leads, design e tecnologia',
       cta: 'Começar',
     },
+    pagetitles: {
+      home: 'Início',
+      services: 'Nossos serviços',
+      portfolio: 'Portfolio',
+      about: 'Sobre nós',
+      contact: 'Entre em contato',
+    },
     services: {
-      title: 'Serviços que oferecemos',
+      title: 'Nossos serviços',
       consulting: {
         title: 'Consultoria',
         description: 'Orientação estratégica para transformação digital e crescimento empresarial',

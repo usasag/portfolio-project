@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Language } from '../types';
 
 interface LanguageContextType {
@@ -15,6 +15,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [currentLanguage, setCurrentLanguage] = useState<Language>(languages[0]);
+
+  useEffect(() => {
+    const browserLanguage = navigator.language;
+    if (browserLanguage.startsWith('pt')) {
+      setCurrentLanguage(languages.find(lang => lang.code === 'pt')!);
+    } else {
+      setCurrentLanguage(languages.find(lang => lang.code === 'en')!);
+    }
+  }, []);
 
   const setLanguage = (lang: Language) => {
     setCurrentLanguage(lang);
